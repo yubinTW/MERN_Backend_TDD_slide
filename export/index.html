@@ -870,7 +870,7 @@ export { establishConnection }
 
 // ...
 
-  server.listen(port, (err, _) =&gt; {
+  server.listen(port, '0.0.0.0', (err, _) =&gt; {
       if (err) {
           console.error(err)
       }

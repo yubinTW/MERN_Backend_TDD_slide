@@ -556,7 +556,7 @@ import { establishConnection } from './plugins/mongoose'
 
 // ...
 
-  server.listen(port, (err, _) => {
+  server.listen(port, '0.0.0.0', (err, _) => {
       if (err) {
           console.error(err)
       }
