@@ -356,6 +356,7 @@ describe('API test', () => {
     beforeAll(async () => {
         // await dbHandler.connect()
         server = startFastify(8888)
+        await server.ready()
     })
     
     // afterEach(async () => {
